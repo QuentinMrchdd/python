@@ -45,21 +45,6 @@ print(tuple(-150))
 
 #exo4
 
-def tuple(val):
-    if val < 0 :
-        signe = "négatif"
-    else:
-        signe ="positif"
-    typeval = type(val)
-    valabsol = abs(val)
-    tupl = (signe, typeval, valabsol)
-    return tupl
-
-print(tuple(-150))
-
-
-#exo5
-
 def somme(test_tup):
     res = sum(list(test_tup))  
     return str(res)
