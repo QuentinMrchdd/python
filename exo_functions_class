@@ -1,0 +1,27 @@
+class Rectangle:
+    
+    def __init__(self, longueur=30, largeur=15):
+        self.longueur = longueur
+        self.largeur = largeur
+        self.nom ="rectangle"
+    def surface(self):
+        
+        return "surface : "+format(self.largeur*self.longueur)
+
+    def affichage(self):
+        return "la longueur est "+format(self.longueur)+" et la largeur "+format(self.largeur)
+
+class Carre(Rectangle):
+    def __init__(self, cote=10):
+        Rectangle.__init__(self, cote, cote)
+        self.nom="carre"
+
+
+longueur = 200
+largeur = 100 
+rect = Rectangle(longueur, largeur)
+print(rect.affichage())
+print(rect.surface())
+carre = Carre()
+print(carre)
+
